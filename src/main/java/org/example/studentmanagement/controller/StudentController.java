@@ -14,8 +14,9 @@ public class StudentController {
 
     private final StudentService studentService;
 
-    @Autowired
+    @Autowired // is optional  because i have one constructor
     public StudentController(StudentService studentService) {
+
         this.studentService = studentService;
     }
 
